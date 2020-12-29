@@ -40,5 +40,5 @@ interface POSITION {
 export function show(message: string, options?: OPTIONS): RootSiblings
 export function showSuccess(message: string, options?: OPTIONS): RootSiblings
 export function showLoading(message: string, options?: OPTIONS): RootSiblings
-export function hide(toast: RootSiblings): void
+export function hide(toast?: RootSiblings): void
 export const position: POSITION
