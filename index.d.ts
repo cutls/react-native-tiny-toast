@@ -36,9 +36,52 @@ interface POSITION {
     CENTER: number
     BOTTOM: number
 }
-
+/**
+ * Show a toast
+ *
+ * @param message - Toast's message
+ * @param options - Options
+ * @returns This return will be used if you want to `hide` the toast
+ *
+ * @show
+ */
 export function show(message: string, options?: OPTIONS): RootSiblings
+
+/**
+ * Show a toast with success icon above message
+ *
+ * @param message - Toast's message
+ * @param options - Options
+ * @returns This return will be used if you want to `hide` the toast
+ *
+ * @show
+ */
 export function showSuccess(message: string, options?: OPTIONS): RootSiblings
+
+/**
+ * Show a toast with loading
+ * 
+ * @remarks
+ * You should setTimeout to hide if the loading was failed. This toast is not hide automatically
+ *
+ * @param message - Toast's message
+ * @param options - Options
+ * @returns This return will be used if you want to `hide` the toast
+ *
+ * @show
+ */
 export function showLoading(message: string, options?: OPTIONS): RootSiblings
+
+/**
+ * Hide a toast
+ * 
+ * @remarks
+ * If param(toast: RootSiblings) is not given, this method hide all toasts.
+ *
+ * @param toast - Toast
+ *
+ * @hide
+ */
 export function hide(toast?: RootSiblings): void
+
 export const position: POSITION
