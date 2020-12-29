@@ -22,6 +22,7 @@ interface OPTIONS {
     maskColor?: string
     maskStyle?: ViewStyle
     imgSource?: ImageSourcePropType
+    componentAsImg?: JSX.Element
     imgStyle?: ImageStyle
     loading?: boolean
     indicatorSize?: [string, number]
