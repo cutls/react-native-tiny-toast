@@ -28,6 +28,7 @@
   "homepage": "https://github.com/shx996/react-native-tiny-toast#readme",
   "dependencies": {
     "@expo/vector-icons": "^12.0.2",
+    "deprecated-react-native-prop-types": "^4.0.0",
     "prop-types": "latest",
     "react-native-iphone-x-helper": "1.2.1",
     "react-native-root-siblings": "3.2.3"
